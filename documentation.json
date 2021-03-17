@@ -2659,7 +2659,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".popover_wrapper {\n  position: relative;\n  h2 {\n    color: #595959;\n    text-transform: capitalize;\n  }\n  .popover {\n    background: #ffffff;\n    border-radius: 4px;\n  }\n}\n",
+                    "data": ".popover_wrapper {\n  position: relative;\n  h2 {\n    color: #595959;\n    text-transform: capitalize;\n  }\n  .popover {\n    background: #ffffff;\n    border-radius: 4px;\n\n  }\n}\n",
                     "styleUrl": "./popover.component.scss"
                 }
             ],
@@ -4888,7 +4888,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Text-Button.stories.ts",
+                "file": "src/stories/Switch-Button.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -4896,7 +4896,7 @@
                 "name": "Primary",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Switch-Button.stories.ts",
+                "file": "src/stories/Text-Button.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -5479,17 +5479,17 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Text-Button.stories.ts",
-                "type": "Story<TextButtonComponent>",
-                "defaultValue": "(args: TextButtonComponent) => ({\n  component: TextButtonComponent,\n  props: args,\n})"
+                "file": "src/stories/Switch-Button.stories.ts",
+                "type": "Story<SwitchButtonComponent>",
+                "defaultValue": "(args: SwitchButtonComponent) => ({\n  component: SwitchButtonComponent,\n  props: args,\n})"
             },
             {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Switch-Button.stories.ts",
-                "type": "Story<SwitchButtonComponent>",
-                "defaultValue": "(args: SwitchButtonComponent) => ({\n  component: SwitchButtonComponent,\n  props: args,\n})"
+                "file": "src/stories/Text-Button.stories.ts",
+                "type": "Story<TextButtonComponent>",
+                "defaultValue": "(args: TextButtonComponent) => ({\n  component: TextButtonComponent,\n  props: args,\n})"
             },
             {
                 "name": "Template",
