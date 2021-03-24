@@ -21,6 +21,12 @@ Label.args = {
   message: true,
   messageText: 'Error Massage'
 };
+Label.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
+};
 
 export const NoLabel = Template.bind({});
 NoLabel.args = {
@@ -29,10 +35,22 @@ NoLabel.args = {
   message: true,
   messageText: 'Error Massage'
 };
+NoLabel.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
+};
 
 export const Message = Template.bind({});
 Message.args = {
   label: true,
   labelText: 'Select Label',
   message: false,
+};
+Message.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
 };

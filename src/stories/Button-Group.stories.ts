@@ -22,6 +22,12 @@ PrimaryText.args = {
   centerLabel: 'Label',
   rightLabel: 'Label'
 };
+PrimaryText.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+  }
+};
 
 export const PrimaryIcon = Template.bind({});
 PrimaryIcon.args = {
@@ -30,6 +36,12 @@ PrimaryIcon.args = {
   LeftLabel: 'Label',
   centerLabel: 'Label',
   rightLabel: 'Label',
+};
+PrimaryIcon.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+  }
 };
 
 export const OutlineText = Template.bind({});
@@ -40,6 +52,12 @@ OutlineText.args = {
   centerLabel: 'Label',
   rightLabel: 'Label',
 };
+OutlineText.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+  }
+};
 
 export const OutlineIcon = Template.bind({});
 OutlineIcon.args = {
@@ -48,4 +66,10 @@ OutlineIcon.args = {
   LeftLabel: 'Label',
   centerLabel: 'Label',
   rightLabel: 'Label'
+};
+OutlineIcon.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+  }
 };

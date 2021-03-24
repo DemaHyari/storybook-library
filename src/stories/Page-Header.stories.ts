@@ -19,15 +19,33 @@ Breadcrumb.args = {
   breadcrumb: true,
   title: false
 };
+Breadcrumb.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+  }
+};
 
 export const Title = Template.bind({});
 Title.args = {
   title: true,
   breadcrumb: false
 };
+Title.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+  }
+};
 
 export const FullPageHeader = Template.bind({});
 FullPageHeader.args = {
   title: true,
   breadcrumb: true
+};
+FullPageHeader.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+  }
 };

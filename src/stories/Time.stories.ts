@@ -20,11 +20,23 @@ Label.args = {
   labelText: 'Label',
   message: true,
 };
+Label.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
+};
 
 export const NoLabel = Template.bind({});
 NoLabel.args = {
   label: false,
   message: true,
+};
+NoLabel.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
 };
 
 export const Message = Template.bind({});
@@ -33,12 +45,24 @@ Message.args = {
   labelText: 'Label',
   message: true,
 };
+Message.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
+};
 
 export const ValidMessage = Template.bind({});
 ValidMessage.args = {
   label: true,
   labelText: 'Label',
   message: true,
+};
+ValidMessage.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
 };
 
 export const InvalidMessage = Template.bind({});
@@ -48,3 +72,10 @@ InvalidMessage.args = {
   message: true,
   messageText: 'ERROR!'
 };
+InvalidMessage.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
+};
+

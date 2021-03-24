@@ -15,6 +15,10 @@ const Template: Story<SwitchButtonComponent> = (args: SwitchButtonComponent) => 
 });
 
 export const Primary = Template.bind({});
-Primary.args = {
-  
+Primary.args = {};
+Primary.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
 };

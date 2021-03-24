@@ -18,12 +18,24 @@ ImageAvatar.args = {
   image: true,
   ellipse: true,
 };
+ImageAvatar.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
+};
 
 export const ImageAvatarPresence = Template.bind({});
 ImageAvatarPresence.args = {
   image: true,
   ellipse: true,
   presence: true
+};
+ImageAvatarPresence.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };
 
 export const ImageAvatarCheck = Template.bind({});
@@ -32,7 +44,12 @@ ImageAvatarCheck.args = {
   ellipse: true,
   status: true,
   check: true
-
+};
+ImageAvatarCheck.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };
 
 export const ImageAvatarClose = Template.bind({});
@@ -41,7 +58,12 @@ ImageAvatarClose.args = {
   ellipse: true,
   status: true,
   close: true
-
+};
+ImageAvatarClose.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };
 
 export const ImageAvatarMore = Template.bind({});
@@ -50,10 +72,21 @@ ImageAvatarMore.args = {
   ellipse: true,
   status: true,
   more: true
-
+};
+ImageAvatarMore.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };
 
 export const TextAvatar = Template.bind({});
 TextAvatar.args = {
   text:true,
+};
+TextAvatar.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };

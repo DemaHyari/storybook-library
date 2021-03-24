@@ -19,4 +19,9 @@ Paginator.args = {
   active: true,
   label: '55',
 };
-
+Paginator.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+  }
+};

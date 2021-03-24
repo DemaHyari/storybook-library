@@ -19,11 +19,23 @@ Success.args = {
   success: true,
   label: 'This is Success Message'
 };
+Success.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
+};
 
 export const Warning = Template.bind({});
 Warning.args = {
   warning: true,
   label: 'This is Warning Message'
+};
+Warning.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };
 
 export const Error = Template.bind({});
@@ -31,11 +43,23 @@ Error.args = {
   error: true,
   label: 'This is Erorr Message'
 };
+Error.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
+};
 
 export const Info = Template.bind({});
 Info.args = {
   info: true,
   label: 'This is Info Message'
+};
+Info.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };
 
 export const Loading = Template.bind({});
@@ -43,7 +67,12 @@ Loading.args = {
   loading: true,
   label: 'This is Loading Message'
 };
-
+Loading.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
+};
 
 
 

@@ -19,11 +19,23 @@ Arrow.args = {
   icon: false,
   arrow: true
 };
+Arrow.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
+};
 
 export const Icon = Template.bind({});
 Icon.args = {
   icon: true,
   arrow: false
+};
+Icon.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
 };
 
 export const VerticalIcon = Template.bind({});
@@ -32,6 +44,12 @@ VerticalIcon.args = {
   arrow: false,
   vertical: true
 };
+VerticalIcon.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
+};
 
 export const VerticalArrow = Template.bind({});
 VerticalArrow.args = {
@@ -39,4 +57,10 @@ VerticalArrow.args = {
   arrow: false,
   verticalArrow: true,
   vertical: true
+};
+VerticalArrow.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
 };

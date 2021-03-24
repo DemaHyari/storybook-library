@@ -15,6 +15,10 @@ const Template: Story<RateComponent> = (args: RateComponent) => ({
 });
 
 export const Default = Template.bind({});
-Default.args = {
-  
+Default.args = {};
+Default.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
 };

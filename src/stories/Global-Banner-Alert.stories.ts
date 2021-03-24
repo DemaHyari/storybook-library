@@ -15,17 +15,37 @@ BasicChange.args = {
   change: true,
   closeIcon: true,
 };
+BasicChange.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
+};
+
 export const IconChange = Template.bind({});
 IconChange.args = {
   change: true,
   closeIcon: false,
   icon: true
 };
+IconChange.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
+};
+
 export const Change = Template.bind({});
 Change.args = {
   change: true,
   closeIcon: true,
   icon: true
+};
+Change.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };
 
 export const Success = Template.bind({});
@@ -34,12 +54,24 @@ Success.args = {
   closeIcon: true,
   icon: true
 };
+Success.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
+};
 
 export const Info = Template.bind({});
 Info.args = {
   info: true,
   closeIcon: true,
   icon: true
+};
+Info.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };
 
 export const Warning = Template.bind({});
@@ -48,6 +80,12 @@ Warning.args = {
   closeIcon: true,
   icon: true
 };
+Warning.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
+};
 
 export const Erorr = Template.bind({});
 Erorr.args = {
@@ -55,4 +93,9 @@ Erorr.args = {
   closeIcon: true,
   icon: true
 };
-
+Erorr.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
+};

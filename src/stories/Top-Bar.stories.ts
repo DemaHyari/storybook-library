@@ -18,14 +18,32 @@ export const SearchIcon = Template.bind({});
 SearchIcon.args = {
   searchIcon: true,
 };
+SearchIcon.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+  }
+};
 
 export const SearchInput = Template.bind({});
 SearchInput.args = {
   searchInput: true,
+};
+SearchInput.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+  }
 };
 
 export const Logo = Template.bind({});
 Logo.args = {
   searchIcon: true,
   logo: true
+};
+Logo.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+  }
 };

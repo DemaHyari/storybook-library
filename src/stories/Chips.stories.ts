@@ -21,12 +21,24 @@ Default.args = {
   rounded: true,
   outline: true
 };
+Default.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
+};
 
 export const Primary = Template.bind({});
 Primary.args = {
   label: 'Default Chip',
   primary: true,
   rounded: true
+};
+Primary.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
 };
 
 export const Positive = Template.bind({});
@@ -35,12 +47,24 @@ Positive.args = {
   positive: true,
   rounded: true
 };
+Positive.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
+};
 
 export const Warning = Template.bind({});
 Warning.args = {
   label: 'Default Chip',
   warning: true,
   rounded: true
+};
+Warning.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
 };
 
 export const Error = Template.bind({});
@@ -49,12 +73,25 @@ Error.args = {
   error: true,
   rounded: true
 };
+Error.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
+};
+
 export const Selected = Template.bind({});
 Selected.args = {
   label: 'Selected Chip',
   primary: true,
   rounded: true,
   selected: true
+};
+Selected.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
 };
 
 export const Iconic = Template.bind({});
@@ -63,6 +100,12 @@ Iconic.args = {
   primary: true,
   rounded: true,
   iconic: true
+};
+Iconic.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
 };
 
 export const Counter = Template.bind({});
@@ -73,6 +116,12 @@ Counter.args = {
   counter: true,
   count: 30
 };
+Counter.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
+};
 
 export const UserImage = Template.bind({});
 UserImage.args = {
@@ -80,6 +129,12 @@ UserImage.args = {
   primary: true,
   rounded: true,
   userImage: true,
+};
+UserImage.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
 };
 
 export const Addable = Template.bind({});
@@ -89,6 +144,12 @@ Addable.args = {
   rounded: true,
   addable: true
 };
+Addable.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
+};
 
 export const Removable = Template.bind({});
 Removable.args = {
@@ -96,6 +157,12 @@ Removable.args = {
   primary: true,
   rounded: true,
   removable: true
+};
+Removable.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
 };
 
 
@@ -105,4 +172,10 @@ Disabled.args = {
   primary: true,
   rounded: true,
   disabled: true
+};
+Disabled.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
 };

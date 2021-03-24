@@ -19,11 +19,23 @@ Icon.args = {
   icon: true,
   primary: true
 };
+Icon.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+  }
+};
 
 export const Link = Template.bind({});
 Link.args = {
   link: true,
   primary: true
+};
+Link.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+  }
 };
 
 export const LinkIcon = Template.bind({});
@@ -31,6 +43,12 @@ LinkIcon.args = {
   icon: true,
   link: true,
   primary: true
+};
+LinkIcon.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+  }
 };
 
 export const LinkIconActive = Template.bind({});
@@ -40,6 +58,12 @@ LinkIconActive.args = {
   primary: true,
   active: true
 };
+LinkIconActive.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+  }
+};
 
 export const Dropdown = Template.bind({});
 Dropdown.args = {
@@ -47,4 +71,10 @@ Dropdown.args = {
   primary: false,
   dropdown: true,
   active: true
+};
+Dropdown.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+  }
 };

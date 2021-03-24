@@ -42,6 +42,9 @@ import { BadgesComponent } from './badges/badges.component';
 import { AvatarComponent } from './avatar/avatar.component';
 import { CounterComponent } from './counter/counter.component';
 import { PopoverComponent } from './popover/popover.component';
+import { TabComponent } from './tab/tab.component';
+import { TableComponent } from './table/table.component';
+import { TableeComponent } from './tablee/tablee.component';
 
 @NgModule({
   declarations: [
@@ -84,6 +87,9 @@ import { PopoverComponent } from './popover/popover.component';
     AvatarComponent,
     CounterComponent,
     PopoverComponent,
+    TabComponent,
+    TableComponent,
+    TableeComponent,
   ],
   imports: [
     BrowserModule,

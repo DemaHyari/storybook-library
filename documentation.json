@@ -893,7 +893,7 @@
         },
         {
             "name": "CheckboxComponent",
-            "id": "component-CheckboxComponent-ba86d86bf4d01640b4d5f03acebed22f",
+            "id": "component-CheckboxComponent-e636a5938628eaf4fae941fc838914b7",
             "file": "src/app/checkbox/checkbox.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -929,27 +929,16 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-checkbox',\n  templateUrl: './checkbox.component.html',\n  styleUrls: ['./checkbox.component.scss']\n})\nexport class CheckboxComponent{\n  @Input()\n  label = false;\n\n  @Input()\n  labelText = 'Label';\n\n  public get Label(): string[]{\n    let mode = '';\n    if(this.label){\n      mode = 'visibility';\n    }else{\n      mode = 'hidden';\n    }\n    return [ mode ];\n  }\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-checkbox',\n  templateUrl: './checkbox.component.html',\n  styleUrls: ['./checkbox.component.scss']\n})\nexport class CheckboxComponent{\n  @Input()\n  label = false;\n\n  @Input()\n  labelText = 'Label';\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".container {\n  display: block;\n  position: relative;\n  padding-left: 20px;\n  margin-bottom: 12px;\n  cursor: pointer;\n  font-size: 18px;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  input {\n    position: absolute;\n    opacity: 0;\n    cursor: pointer;\n    height: 0;\n    width: 0;\n    &:checked ~ .checkmark {\n      background-color: #2196F3;\n    }\n    &:checked ~ .checkmark:after {\n      display: block;\n    }\n    &:disabled{\n      color: #BFBFBF;\n      background-color: #BFBFBF;\n    }\n    &:invalid{\n\n    }\n  }\n  .checkmark {\n    position: absolute;\n    top: 0;\n    left: 0;\n    height: 16px;\n    width: 16px;\n    background-color: #fff;\n    border: 1px solid #D9D9D9;\n    &:disabled{\n      background-color: #BFBFBF;\n    }\n    &:invalid{\n      border: 1px solid #F5222D;\n    }\n    &:after {\n      content: \"\";\n      position: absolute;\n      display: none;\n    }\n    &:after {\n      left: 4px;\n      top: 0px;\n      width: 5px;\n      height: 11px;\n      border: solid white;\n      border-width: 0 2px 2px 0;\n      -webkit-transform: rotate(45deg);\n      -ms-transform: rotate(45deg);\n      transform: rotate(45deg);\n    }\n  }\n  &:hover {\n    input ~ .checkmark {\n      border: 2px solid #1890ff;\n    }\n  }\n}\n.hidden {\n  display: none;\n}\n.visibility {\n  display: inline-block;\n}\n",
+                    "data": ".container {\n  display: block;\n  position: relative;\n  padding-left: 20px;\n  margin-bottom: 12px;\n  cursor: pointer;\n  font-size: 18px;\n  -webkit-user-select: none;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  input {\n    position: absolute;\n    opacity: 0;\n    cursor: pointer;\n    height: 0;\n    width: 0;\n    &:checked ~ .checkmark {\n      background-color: #2196F3;\n    }\n    &:checked ~ .checkmark:after {\n      display: block;\n    }\n    &:disabled{\n      color: #BFBFBF;\n      background-color: #BFBFBF;\n    }\n  }\n  .checkmark {\n    position: absolute;\n    top: 0;\n    left: 0;\n    height: 16px;\n    width: 16px;\n    background-color: #fff;\n    border: 1px solid #D9D9D9;\n    &:disabled{\n      background-color: #BFBFBF;\n    }\n    &:invalid{\n      border: 1px solid #F5222D;\n    }\n    &:after {\n      content: \"\";\n      position: absolute;\n      display: none;\n    }\n    &:after {\n      left: 4px;\n      top: 0px;\n      width: 5px;\n      height: 11px;\n      border: solid white;\n      border-width: 0 2px 2px 0;\n      -webkit-transform: rotate(45deg);\n      -ms-transform: rotate(45deg);\n      transform: rotate(45deg);\n    }\n  }\n  &:hover {\n    input ~ .checkmark {\n      border: 2px solid #1890ff;\n    }\n  }\n}\n",
                     "styleUrl": "./checkbox.component.scss"
                 }
             ],
             "stylesData": "",
-            "accessors": {
-                "Label": {
-                    "name": "Label",
-                    "getSignature": {
-                        "name": "Label",
-                        "type": "[]",
-                        "returnType": "string[]",
-                        "line": 15
-                    }
-                }
-            },
-            "templateData": "<label class=\"container\">\n  <span [ngClass]=\"Label\">{{ labelText }}</span>\n  <input type=\"checkbox\">\n  <span class=\"checkmark\"></span>\n</label>\n"
+            "templateData": "<label class=\"container\">\n  <span *ngIf=\"Label\">{{ labelText }}</span>\n  <input type=\"checkbox\">\n  <span class=\"checkmark\"></span>\n</label>\n"
         },
         {
             "name": "ChipsComponent",
@@ -2614,7 +2603,7 @@
         },
         {
             "name": "PopoverComponent",
-            "id": "component-PopoverComponent-2b738286dab32051eef39c4de3fbbd47",
+            "id": "component-PopoverComponent-cfe35f27f5e55c34c8678223d740415e",
             "file": "src/app/popover/popover.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -2632,8 +2621,28 @@
             "viewProviders": [],
             "inputsClass": [
                 {
+                    "name": "bottom",
+                    "defaultValue": "false",
+                    "line": 22
+                },
+                {
+                    "name": "center",
+                    "defaultValue": "false",
+                    "line": 34
+                },
+                {
+                    "name": "down",
+                    "defaultValue": "false",
+                    "line": 37
+                },
+                {
+                    "name": "left",
+                    "defaultValue": "false",
+                    "line": 25
+                },
+                {
                     "name": "popover_content",
-                    "defaultValue": "'Popover Title'",
+                    "defaultValue": "'Popover Content goes here and here and here'",
                     "line": 16
                 },
                 {
@@ -2642,9 +2651,24 @@
                     "line": 13
                 },
                 {
+                    "name": "right",
+                    "defaultValue": "false",
+                    "line": 28
+                },
+                {
                     "name": "title",
-                    "defaultValue": "'Title'",
+                    "defaultValue": "'Default Title'",
                     "line": 10
+                },
+                {
+                    "name": "top",
+                    "defaultValue": "false",
+                    "line": 19
+                },
+                {
+                    "name": "up",
+                    "defaultValue": "false",
+                    "line": 31
                 }
             ],
             "outputsClass": [],
@@ -2655,16 +2679,27 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-popover',\n  templateUrl: './popover.component.html',\n  styleUrls: ['./popover.component.scss']\n})\nexport class PopoverComponent {\n  @Input()\n  title = 'Title';\n\n  @Input()\n  popover_title = 'Popover Title';\n\n  @Input()\n  popover_content = 'Popover Title';\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-popover',\n  templateUrl: './popover.component.html',\n  styleUrls: ['./popover.component.scss']\n})\nexport class PopoverComponent {\n  @Input()\n  title = 'Default Title';\n\n  @Input()\n  popover_title = 'Popover Title';\n\n  @Input()\n  popover_content = 'Popover Content goes here and here and here';\n\n  @Input()\n  top = false;\n\n  @Input()\n  bottom = false;\n\n  @Input()\n  left = false;\n\n  @Input()\n  right = false;\n\n  @Input()\n  up = false;\n\n  @Input()\n  center = false;\n\n  @Input()\n  down = false;\n\n  public get Tooltip(): string[] {\n    let mode = '';\n    if (this.top) {\n      mode = 'top';\n    } else if (this.bottom) {\n      mode = 'bottom';\n    } else if (this.left) {\n      mode = 'left';\n    } else if (this.right) {\n      mode = 'right';\n    }\n    if (this.center) {\n      mode += ' center';\n    }else if (this.down) {\n      mode += ' down';\n    }else if (this.up) {\n      mode += ' up';\n    }\n    return [mode]\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".popover_wrapper {\n  position: relative;\n  h2 {\n    color: #595959;\n    text-transform: capitalize;\n  }\n  .popover {\n    background: #ffffff;\n    border-radius: 4px;\n\n  }\n}\n",
+                    "data": ".popover_wrapper {\n  position: relative;\n  text-align: center;\n  display: inline-block;\n  h2 {\n    color: #595959;\n    text-transform: capitalize;\n  }\n  .popover {\n    width: 100%;\n    position: absolute;\n    visibility: hidden;\n    display: inline-block;\n    background: #ffffff;\n    border-radius: 4px;\n    padding: 10px 0px;\n    transform: translate(0, 10px);\n    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);\n    z-index: 1;\n    &.top {\n      bottom: 100%;\n      left: 0%;\n      &.up {\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 100%;\n          left: 50%;\n          margin-left: -5px;\n          border: 5px solid;\n          border-color: #FFFFFF transparent transparent transparent;\n        }\n      }\n      &.center {\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 100%;\n          left: 50%;\n          margin-left: -5px;\n          border: 5px solid;\n          border-color: #FFFFFF transparent transparent transparent;\n        }\n      }\n      &.down {\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 100%;\n          left: 75%;\n          margin-left: -5px;\n          border: 5px solid;\n          border-color: #FFFFFF transparent transparent transparent;\n        }\n      }\n    }\n    &.bottom {\n      top: 110%;\n      left: 0%;\n      &.up {\n        &::after {\n          content: \"\";\n          position: absolute;\n          bottom: 100%;\n          left: 15%;\n          margin-left: -5px;\n          border: 5px solid;\n          border-color:  transparent transparent #FFFFFF transparent;\n        }\n      }\n      &.center {\n        &::after {\n          content: \"\";\n          position: absolute;\n          bottom: 100%;\n          left: 50%;\n          margin-left: -5px;\n          border: 5px solid;\n          border-color: transparent transparent #FFFFFF transparent;\n        }\n      }\n      &.down {\n        &::after {\n          content: \"\";\n          position: absolute;\n          bottom: 100%;\n          left: 80%;\n          margin-left: -5px;\n          border: 5px solid;\n          border-color: transparent transparent #FFFFFF transparent;\n        }\n      }\n    }\n    &.left {\n      right: 100%;\n      &.up {\n        top: 0%;\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 18%;\n          left: 100%;\n          margin-top: -5px;\n          border: 5px solid;\n          border-color:  transparent transparent transparent #FFFFFF;\n        }\n      }\n      &.center {\n        top: -25%;\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 50%;\n          left: 100%;\n          margin-top: -5px;\n          border: 5px solid;\n          border-color: transparent transparent transparent #FFFFFF;\n        }\n      }\n      &.down {\n        top: -30%;\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 70%;\n          left: 100%;\n          margin-top: -5px;\n          border: 5px solid;\n          border-color: transparent transparent transparent #FFFFFF;\n        }\n      }\n    }\n    &.right {\n      left: 100%;\n      &.up {\n        top: 0%;\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 15%;\n          right: 100%;\n          margin-left: -5px;\n          border: 5px solid;\n          border-color:  transparent #FFFFFF transparent transparent;\n        }\n      }\n      &.center {\n        top: -25%;\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 50%;\n          right: 100%;\n          margin-left: -5px;\n          border: 5px solid;\n          border-color: transparent #FFFFFF transparent transparent;\n        }\n      }\n      &.down {\n        top: -30%;\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 70%;\n          right: 100%;\n          margin-left: -5px;\n          border: 5px solid;\n          border-color: transparent #FFFFFF transparent transparent;\n        }\n      }\n    }\n    h3{\n      margin: 0;\n      padding: 15px 15px 20px;\n      font-size: 16px;\n      color: #595959;\n      text-transform: capitalize;\n      border-bottom: 1px solid #D9D9D9;;\n    }\n    p{\n      color: #8C8C8C;\n      font-size: 14px;\n      padding: 10px 15px;\n    }\n  }\n  &:hover{\n    .popover{\n      z-index: 10;\n      visibility: visible;\n      transform: translate(0, 0px);\n      transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);\n    }\n  }\n}\n",
                     "styleUrl": "./popover.component.scss"
                 }
             ],
             "stylesData": "",
-            "templateData": "<div class=\"popover_wrapper\">\n  <h2>{{title}}</h2>\n  <div class=\"popover\">\n    <h3 class=\"popover_tilte\"> {{ popover_title }} </h3>\n    <p class=\"popover_content\"> {{ popover_content }} </p>\n  </div>\n</div>\n"
+            "accessors": {
+                "Tooltip": {
+                    "name": "Tooltip",
+                    "getSignature": {
+                        "name": "Tooltip",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 39
+                    }
+                }
+            },
+            "templateData": "<div class=\"popover_wrapper\">\n  <h2>{{ title }}</h2>\n  <div class=\"popover\" [ngClass]='Tooltip'>\n    <h3 class=\"popover_tilte\"> {{ popover_title }} </h3>\n    <p class=\"popover_content\"> Popover Content goes here and here and here </p>\n  </div>\n</div>\n"
         },
         {
             "name": "RadioButtonComponent",
@@ -3217,6 +3252,292 @@
             "templateData": "<div class=\"onoffswitch\">\n  <input type=\"checkbox\" name=\"onoffswitch\" class=\"onoffswitch-checkbox\" id=\"myonoffswitch\" tabindex=\"0\" checked>\n  <label class=\"onoffswitch-label\" for=\"myonoffswitch\">\n      <span class=\"onoffswitch-inner\"></span>\n      <span class=\"onoffswitch-switch\"></span>\n  </label>\n</div>\n"
         },
         {
+            "name": "TabComponent",
+            "id": "component-TabComponent-46067d8784e50d5541482568bdd65992",
+            "file": "src/app/tab/tab.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-tab",
+            "styleUrls": [
+                "./tab.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./tab.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "active",
+                    "defaultValue": "false",
+                    "line": 22
+                },
+                {
+                    "name": "closable",
+                    "defaultValue": "false",
+                    "line": 13
+                },
+                {
+                    "name": "icon",
+                    "defaultValue": "false",
+                    "line": 16
+                },
+                {
+                    "name": "label",
+                    "defaultValue": "'Tab'",
+                    "line": 10
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "line": 19,
+                    "type": "\"small\" | \"medium\" | \"large\" | \"pane\""
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-tab',\n  templateUrl: './tab.component.html',\n  styleUrls: ['./tab.component.scss']\n})\nexport class TabComponent {\n  @Input()\n  label = 'Tab';\n\n  @Input()\n  closable = false;\n\n  @Input()\n  icon = false;\n\n  @Input()\n  size: 'small' | 'medium' | 'large' | 'pane' = 'medium';\n\n  @Input()\n  active = false\n  public get classes(): string[] {\n    let mode = this.active ? 'active' : 'inactive';\n    return ['tab', this.size, mode]\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": ".tab{\n  font-size: 16px;\n  background: #FFF;\n  text-align: center;\n  display: inline-block;\n  outline: none;\n  border: none;\n  &.pane{\n    padding: 13px 16px;\n    box-shadow: inset 1px 0px 0px #D9D9D9, inset 0px 1px 0px #D9D9D9, inset -1px 0px 0px #D9D9D9;\n    &.inactive{\n      color: #595959;\n      background: #F5F5F5;\n      &:hover{\n        color: #40A9FF;\n      }\n      &:checked{\n        color: #096DD9;\n      }\n      &:disabled{\n        color: #BFBFBF;\n      }\n    }\n    &.active{\n      color: #1890FF;\n      background: #FFFFFF;\n      &:hover{\n        color: #40A9FF;\n      }\n      &:checked{\n        color: #096DD9;\n      }\n    }\n  }\n  &.small{\n    padding: 6px 6px 6px 12px;\n    box-shadow: inset 0px -1px 0px #D9D9D9;\n    &.inactive{\n      color: #595959;\n      &:hover{\n        color: #40A9FF;\n      }\n      &:checked{\n        color: #096DD9;\n      }\n      &:disabled{\n        color: #BFBFBF;\n      }\n    }\n    &.active{\n      color: #1890FF;\n      box-shadow: inset 0px -2px 0px #1890FF;\n      &:hover{\n        color: #40A9FF;\n        box-shadow: inset 0px -2px 0px #1890FF;\n      }\n      &:checked{\n        color: #096DD9;\n        box-shadow: inset 0px -2px 0px #1890FF;\n      }\n    }\n  }\n  &.medium{\n    padding: 12px 12px 12px 15px;\n    box-shadow: inset 0px -1px 0px #D9D9D9;\n    &.inactive{\n      color: #595959;\n      &:hover{\n        color: #40A9FF;\n      }\n      &:checked{\n        color: #096DD9;\n      }\n      &:disabled{\n        color: #BFBFBF;\n      }\n    }\n    &.active{\n      color: #1890FF;\n      box-shadow: inset 0px -2px 0px #1890FF;\n      &:hover{\n        color: #40A9FF;\n        box-shadow: inset 0px -2px 0px #1890FF;\n      }\n      &:checked{\n        color: #096DD9;\n        box-shadow: inset 0px -2px 0px #1890FF;\n      }\n    }\n  }\n  &.large{\n    padding: 13px 13px 13px 18px;\n    box-shadow: inset 0px -1px 0px #D9D9D9;\n    &.inactive{\n      color: #595959;\n      &:hover{\n        color: #40A9FF;\n      }\n      &:checked{\n        color: #096DD9;\n      }\n      &:disabled{\n        color: #BFBFBF;\n      }\n    }\n    &.active{\n      color: #1890FF;\n      box-shadow: inset 0px -2px 0px #1890FF;\n      &:hover{\n        color: #40A9FF;\n        box-shadow: inset 0px -2px 0px #1890FF;\n      }\n      &:checked{\n        color: #096DD9;\n        box-shadow: inset 0px -2px 0px #1890FF;\n      }\n    }\n  }\n  svg{\n    margin: 0px  0px 0px 12px;\n    &.icon{\n      margin: -3px 0px;\n    }\n  }\n  span{\n    margin: 0px 4px;\n  }\n}\n",
+                    "styleUrl": "./tab.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 23
+                    }
+                }
+            },
+            "templateData": "<button [ngClass]='classes'>\n  <svg class=\"icon\" *ngIf='icon' width=\"18\" height=\"18\" viewBox=\"0 0 18 18\" fill=\"currentColor\"\n    xmlns=\"http://www.w3.org/2000/svg\">\n    <path\n      d=\"M8.16699 4.83268H9.83366V6.49935H8.16699V4.83268ZM8.16699 8.16602H9.83366V13.166H8.16699V8.16602ZM9.00033 0.666016C4.40033 0.666016 0.666992 4.39935 0.666992 8.99935C0.666992 13.5993 4.40033 17.3327 9.00033 17.3327C13.6003 17.3327 17.3337 13.5993 17.3337 8.99935C17.3337 4.39935 13.6003 0.666016 9.00033 0.666016ZM9.00033 15.666C5.32533 15.666 2.33366 12.6743 2.33366 8.99935C2.33366 5.32435 5.32533 2.33268 9.00033 2.33268C12.6753 2.33268 15.667 5.32435 15.667 8.99935C15.667 12.6743 12.6753 15.666 9.00033 15.666Z\" />\n  </svg>\n  <span>{{label}}</span>\n  <svg *ngIf='closable' (click)=\"this.parentElement.style.display='none'\" width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n    <path\n      d=\"M9.66634 1.27398L8.72634 0.333984L4.99967 4.06065L1.27301 0.333984L0.333008 1.27398L4.05967 5.00065L0.333008 8.72732L1.27301 9.66732L4.99967 5.94065L8.72634 9.66732L9.66634 8.72732L5.93967 5.00065L9.66634 1.27398Z\"\n      fill=\"#595959\" />\n  </svg>\n</button>\n"
+        },
+        {
+            "name": "TableComponent",
+            "id": "component-TableComponent-313cbf3fb4355d691102292549fb068e",
+            "file": "src/app/table/table.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-table",
+            "styleUrls": [
+                "./table.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./table.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "border",
+                    "defaultValue": "false",
+                    "line": 12
+                },
+                {
+                    "name": "order_base",
+                    "defaultValue": "false",
+                    "line": 15
+                },
+                {
+                    "name": "selected",
+                    "defaultValue": "false",
+                    "line": 18
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "line": 22,
+                    "type": "\"small\" | \"medium\" | \"large\""
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "checked",
+                    "defaultValue": "true",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "items",
+                    "defaultValue": "[0, 1, 2]",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 10
+                },
+                {
+                    "name": "toggleEvent",
+                    "defaultValue": "new EventEmitter()",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "selectAll",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 31
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, EventEmitter, Input, Output } from '@angular/core';\n\n@Component({\n  selector: 'app-table',\n  templateUrl: './table.component.html',\n  styleUrls: ['./table.component.scss'],\n})\nexport class TableComponent {\n  toggleEvent = new EventEmitter();\n  items = [0, 1, 2];\n  @Input()\n  border = false;\n\n  @Input()\n  order_base = false;\n\n  @Input()\n  selected = false;\n\n  checked = true;\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  public get classes(): string[] {\n    let mode = this.border ? 'border' : '';\n    let order = this.order_base ? 'order-base' : '';\n    let select = this.selected ? 'selected' : '';\n    return [this.size, mode, order, select];\n  }\n\n  selectAll() {\n    let items = document.getElementsByName('item');\n    console.log(items);\n    for(let item in items){\n      /*if(item.type = 'checkbox'){\n        item.checked = true;\n      }*/\n    }\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "table{\n  th, td{\n    border-spacing: 0;\n    font-size: 14px;\n    &.small{\n      padding: 8px 24px;\n    }\n    &.medium{\n      padding: 12px 24px;\n    }\n    &.large{\n      padding: 16px 24px;\n    }\n  }\n  th{\n    color: #8C8C8C;\n    background: #FAFAFA;\n    svg{\n      color: #85A5FF;\n      margin-left: 6px;\n    }\n    &.border{\n      box-shadow: inset 1px 0px 0px #D9D9D9, inset 0px 1px 0px #D9D9D9, inset -1px 0px 0px #D9D9D9, inset 0px -1px 0px #D9D9D9;\n      /*\n      &.order-base{\n        box-shadow: inset 1px 0px 0px #D9D9D9, inset 0px 1px 0px #D9D9D9, inset -1px 0px 0px #D9D9D9, inset 0px -1px 0px #40A9FF;\n      }*/\n    }\n    /*\n    &.order-base{\n      box-shadow: inset 1px 0px 0px #D9D9D9, inset 0px 1px 0px #D9D9D9, inset -1px 0px 0px #D9D9D9, inset 0px -1px 0px #40A9FF;\n    }*/\n    &.selected{\n      background: #69C0FF;\n      color: #FFFFFF;\n      &.border{\n        box-shadow: inset 1px 0px 0px #40A9FF, inset 0px 1px 0px #40A9FF, inset -1px 0px 0px #40A9FF, inset 0px -1px 0px #40A9FF;\n      }\n      svg{\n        color: #FFFFFF;\n      }\n    }\n  }\n  td{\n    color: #595959;\n    background: #FFFFFF;\n    box-shadow: inset 0px 1px 0px #D9D9D9, inset 0px -1px 0px #D9D9D9;\n    &.border{\n      box-shadow: inset 1px 0px 0px #D9D9D9, inset 0px 1px 0px #D9D9D9, inset -1px 0px 0px #D9D9D9, inset 0px -1px 0px #D9D9D9;\n    }\n    &.selected{\n      background: #BAE7FF;\n      color:  #595959;;\n      box-shadow: inset 0px 1px 0px #40A9FF, inset 0px -1px 0px #40A9FF;\n      svg{\n        color: #FFFFFF;\n      }\n    }\n    &:hover{\n      background: #E6F7FF;\n      box-shadow: inset 0px 1px 0px #91D5FF, inset 0px -1px 0px #91D5FF;\n    }\n  }\n}\n\n",
+                    "styleUrl": "./table.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 24
+                    }
+                }
+            },
+            "templateData": "<table CELLSPACING=0>\n  <thead>\n    <tr>\n      <th [ngClass]='classes'><input type=\"checkbox\" (click)='selectAll(this)'></th>\n      <th [ngClass]='classes'>\n        Table Header\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">\n          <path\n            d=\"M4.41691 0.917318V7.43315L1.57025 4.58648C1.34275 4.35898 0.969414 4.35898 0.741914 4.58648C0.514414 4.81398 0.514414 5.18148 0.741914 5.40898L4.58608 9.25315C4.81358 9.48065 5.18108 9.48065 5.40858 9.25315L9.25275 5.40898C9.48025 5.18148 9.48025 4.81398 9.25275 4.58648C9.02525 4.35898 8.65775 4.35898 8.43025 4.58648L5.58358 7.43315V0.917318C5.58358 0.596484 5.32108 0.333984 5.00025 0.333984C4.67941 0.333984 4.41691 0.596484 4.41691 0.917318Z\" />\n        </svg>\n      </th>\n      <th [ngClass]='classes'>\n        Table Header\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">\n          <path\n            d=\"M4.41691 0.917318V7.43315L1.57025 4.58648C1.34275 4.35898 0.969414 4.35898 0.741914 4.58648C0.514414 4.81398 0.514414 5.18148 0.741914 5.40898L4.58608 9.25315C4.81358 9.48065 5.18108 9.48065 5.40858 9.25315L9.25275 5.40898C9.48025 5.18148 9.48025 4.81398 9.25275 4.58648C9.02525 4.35898 8.65775 4.35898 8.43025 4.58648L5.58358 7.43315V0.917318C5.58358 0.596484 5.32108 0.333984 5.00025 0.333984C4.67941 0.333984 4.41691 0.596484 4.41691 0.917318Z\" />\n        </svg>\n      </th>\n      <th [ngClass]='classes'>\n        Table Header\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">\n          <path\n            d=\"M4.41691 0.917318V7.43315L1.57025 4.58648C1.34275 4.35898 0.969414 4.35898 0.741914 4.58648C0.514414 4.81398 0.514414 5.18148 0.741914 5.40898L4.58608 9.25315C4.81358 9.48065 5.18108 9.48065 5.40858 9.25315L9.25275 5.40898C9.48025 5.18148 9.48025 4.81398 9.25275 4.58648C9.02525 4.35898 8.65775 4.35898 8.43025 4.58648L5.58358 7.43315V0.917318C5.58358 0.596484 5.32108 0.333984 5.00025 0.333984C4.67941 0.333984 4.41691 0.596484 4.41691 0.917318Z\" />\n        </svg>\n      </th>\n      <th [ngClass]='classes'>\n        Table Header\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">\n          <path\n            d=\"M4.41691 0.917318V7.43315L1.57025 4.58648C1.34275 4.35898 0.969414 4.35898 0.741914 4.58648C0.514414 4.81398 0.514414 5.18148 0.741914 5.40898L4.58608 9.25315C4.81358 9.48065 5.18108 9.48065 5.40858 9.25315L9.25275 5.40898C9.48025 5.18148 9.48025 4.81398 9.25275 4.58648C9.02525 4.35898 8.65775 4.35898 8.43025 4.58648L5.58358 7.43315V0.917318C5.58358 0.596484 5.32108 0.333984 5.00025 0.333984C4.67941 0.333984 4.41691 0.596484 4.41691 0.917318Z\" />\n        </svg>\n      </th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr *ngFor='let x of items'>\n      <td [ngClass]='classes'><input type=\"checkbox\" id=\"test\" name='item'></td>\n      <td [ngClass]='classes'>Table Row</td>\n      <td [ngClass]='classes'>Table Row</td>\n      <td [ngClass]='classes'>Table Row</td>\n      <td [ngClass]='classes'>Table Row</td>\n    </tr>\n  </tbody>\n</table>\n\n"
+        },
+        {
+            "name": "TableeComponent",
+            "id": "component-TableeComponent-d8b9888a9951d5f05ca7efc9d1328352",
+            "file": "src/app/tablee/tablee.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "app-tablee",
+            "styleUrls": [
+                "./tablee.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./tablee.component.html"
+            ],
+            "viewProviders": [],
+            "inputsClass": [
+                {
+                    "name": "border",
+                    "defaultValue": "false",
+                    "line": 12
+                },
+                {
+                    "name": "order_base",
+                    "defaultValue": "false",
+                    "line": 15
+                },
+                {
+                    "name": "selected",
+                    "defaultValue": "false",
+                    "line": 18
+                },
+                {
+                    "name": "size",
+                    "defaultValue": "'medium'",
+                    "line": 22,
+                    "type": "\"small\" | \"medium\" | \"large\""
+                }
+            ],
+            "outputsClass": [],
+            "propertiesClass": [
+                {
+                    "name": "checked",
+                    "defaultValue": "this.onChecked()",
+                    "type": "",
+                    "optional": false,
+                    "description": "",
+                    "line": 20
+                },
+                {
+                    "name": "items",
+                    "defaultValue": "[0, 1, 2]",
+                    "type": "[]",
+                    "optional": false,
+                    "description": "",
+                    "line": 9
+                }
+            ],
+            "methodsClass": [
+                {
+                    "name": "onChecked",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 31
+                },
+                {
+                    "name": "selectAll",
+                    "args": [],
+                    "optional": false,
+                    "returnType": "void",
+                    "typeParameters": [],
+                    "line": 37
+                }
+            ],
+            "hostBindings": [],
+            "hostListeners": [],
+            "description": "",
+            "rawdescription": "",
+            "type": "component",
+            "sourceCode": "import { Component, Input, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-tablee',\n  templateUrl: './tablee.component.html',\n  styleUrls: ['./tablee.component.scss']\n})\nexport class TableeComponent {\n  items = [0, 1, 2];\n  \n  @Input()\n  border = false;\n\n  @Input()\n  order_base = false;\n\n  @Input()\n  selected = false;\n\n  checked = this.onChecked();\n  @Input()\n  size: 'small' | 'medium' | 'large' = 'medium';\n\n  public get classes(): string[] {\n    let mode = this.border ? 'border' : '';\n    let order = this.order_base ? 'order-base' : '';\n    let select = this.selected ? 'selected' : '';\n    return [this.size, mode, order, select];\n  }\n\n  onChecked() {\n    /*let checkBox = parseInt((<HTMLInputElement>document.getElementById(\"test\")).value);\n    console.log(checkBox);\n    return true;*/\n  }\n\n  selectAll() {\n    /*let items = document.getElementsByName('item');\n    console.log(items);\n    for(let item in items){\n      //item = true;\n    }\n\n    for(let i = 0; i< items.length; i++){\n      if(items[i].type = 'checkbox'){\n        items[i].checked = true;\n      }\n    }\n    */\n  }\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "",
+                    "styleUrl": "./tablee.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "accessors": {
+                "classes": {
+                    "name": "classes",
+                    "getSignature": {
+                        "name": "classes",
+                        "type": "[]",
+                        "returnType": "string[]",
+                        "line": 24
+                    }
+                }
+            },
+            "templateData": "<table CELLSPACING=0>\n  <thead>\n    <tr>\n      <th [ngClass]='classes'><input type=\"checkbox\" (click)='selectAll(this)'></th>\n      <th [ngClass]='classes'>\n        Table Header\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">\n          <path\n            d=\"M4.41691 0.917318V7.43315L1.57025 4.58648C1.34275 4.35898 0.969414 4.35898 0.741914 4.58648C0.514414 4.81398 0.514414 5.18148 0.741914 5.40898L4.58608 9.25315C4.81358 9.48065 5.18108 9.48065 5.40858 9.25315L9.25275 5.40898C9.48025 5.18148 9.48025 4.81398 9.25275 4.58648C9.02525 4.35898 8.65775 4.35898 8.43025 4.58648L5.58358 7.43315V0.917318C5.58358 0.596484 5.32108 0.333984 5.00025 0.333984C4.67941 0.333984 4.41691 0.596484 4.41691 0.917318Z\" />\n        </svg>\n      </th>\n      <th [ngClass]='classes'>\n        Table Header\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">\n          <path\n            d=\"M4.41691 0.917318V7.43315L1.57025 4.58648C1.34275 4.35898 0.969414 4.35898 0.741914 4.58648C0.514414 4.81398 0.514414 5.18148 0.741914 5.40898L4.58608 9.25315C4.81358 9.48065 5.18108 9.48065 5.40858 9.25315L9.25275 5.40898C9.48025 5.18148 9.48025 4.81398 9.25275 4.58648C9.02525 4.35898 8.65775 4.35898 8.43025 4.58648L5.58358 7.43315V0.917318C5.58358 0.596484 5.32108 0.333984 5.00025 0.333984C4.67941 0.333984 4.41691 0.596484 4.41691 0.917318Z\" />\n        </svg>\n      </th>\n      <th [ngClass]='classes'>\n        Table Header\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">\n          <path\n            d=\"M4.41691 0.917318V7.43315L1.57025 4.58648C1.34275 4.35898 0.969414 4.35898 0.741914 4.58648C0.514414 4.81398 0.514414 5.18148 0.741914 5.40898L4.58608 9.25315C4.81358 9.48065 5.18108 9.48065 5.40858 9.25315L9.25275 5.40898C9.48025 5.18148 9.48025 4.81398 9.25275 4.58648C9.02525 4.35898 8.65775 4.35898 8.43025 4.58648L5.58358 7.43315V0.917318C5.58358 0.596484 5.32108 0.333984 5.00025 0.333984C4.67941 0.333984 4.41691 0.596484 4.41691 0.917318Z\" />\n        </svg>\n      </th>\n      <th [ngClass]='classes'>\n        Table Header\n        <svg width=\"10\" height=\"10\" viewBox=\"0 0 10 10\" fill=\"currentColor\" xmlns=\"http://www.w3.org/2000/svg\">\n          <path\n            d=\"M4.41691 0.917318V7.43315L1.57025 4.58648C1.34275 4.35898 0.969414 4.35898 0.741914 4.58648C0.514414 4.81398 0.514414 5.18148 0.741914 5.40898L4.58608 9.25315C4.81358 9.48065 5.18108 9.48065 5.40858 9.25315L9.25275 5.40898C9.48025 5.18148 9.48025 4.81398 9.25275 4.58648C9.02525 4.35898 8.65775 4.35898 8.43025 4.58648L5.58358 7.43315V0.917318C5.58358 0.596484 5.32108 0.333984 5.00025 0.333984C4.67941 0.333984 4.41691 0.596484 4.41691 0.917318Z\" />\n        </svg>\n      </th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr *ngFor='let x of items'>\n      <td [ngClass]='classes'><input type=\"checkbox\" (click)='onChecked()' id=\"test\" name='item'></td>\n      <td [ngClass]='classes'>Table Row</td>\n      <td [ngClass]='classes'>Table Row</td>\n      <td [ngClass]='classes'>Table Row</td>\n      <td [ngClass]='classes'>Table Row</td>\n    </tr>\n  </tbody>\n</table>\n\n"
+        },
+        {
             "name": "TextareaComponent",
             "id": "component-TextareaComponent-c146dedc915afaf73a7e8d0deb07abed",
             "file": "src/app/textarea/textarea.component.ts",
@@ -3498,7 +3819,7 @@
         },
         {
             "name": "TooltipComponent",
-            "id": "component-TooltipComponent-c9d064e469b466c2e8d0b1c1ba4ad479",
+            "id": "component-TooltipComponent-060984a0bf8e961bb34d62b27e89396c",
             "file": "src/app/tooltip/tooltip.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -3518,37 +3839,47 @@
                 {
                     "name": "bottom",
                     "defaultValue": "false",
-                    "line": 13
+                    "line": 19
                 },
                 {
                     "name": "center",
                     "defaultValue": "false",
-                    "line": 26
+                    "line": 32
                 },
                 {
                     "name": "down",
                     "defaultValue": "false",
-                    "line": 29
+                    "line": 35
+                },
+                {
+                    "name": "hover_text",
+                    "defaultValue": "'Tooltip Text'",
+                    "line": 13
                 },
                 {
                     "name": "left",
                     "defaultValue": "false",
-                    "line": 16
+                    "line": 22
+                },
+                {
+                    "name": "main_text",
+                    "defaultValue": "'Tooltip Hover'",
+                    "line": 10
                 },
                 {
                     "name": "right",
                     "defaultValue": "false",
-                    "line": 19
+                    "line": 25
                 },
                 {
                     "name": "top",
                     "defaultValue": "false",
-                    "line": 10
+                    "line": 16
                 },
                 {
                     "name": "up",
                     "defaultValue": "false",
-                    "line": 23
+                    "line": 29
                 }
             ],
             "outputsClass": [],
@@ -3559,45 +3890,27 @@
             "description": "",
             "rawdescription": "",
             "type": "component",
-            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-tooltip',\n  templateUrl: './tooltip.component.html',\n  styleUrls: ['./tooltip.component.scss']\n})\nexport class TooltipComponent {\n  @Input()\n  top = false;\n\n  @Input()\n  bottom = false;\n\n  @Input()\n  left = false;\n\n  @Input()\n  right = false;\n\n\n  @Input()\n  up = false;\n\n  @Input()\n  center = false;\n\n  @Input()\n  down = false;\n  \n  public get Left(): string[] {\n    let mode = '';\n    if (this.top) {\n      mode = 'top ';\n    } else if (this.bottom) {\n      mode = 'bottom ';\n    } else if (this.left) {\n      mode = 'left ';\n    } else if (this.right) {\n      mode = 'right ';\n    }\n    if (this.up) {\n      mode += ' up';\n    }\n    return [mode]\n  }\n\n  public get Center(): string[] {\n    let mode = '';\n    if (this.top) {\n      mode = 'top';\n    } else if (this.bottom) {\n      mode = 'bottom';\n    } else if (this.left) {\n      mode = 'left';\n    } else if (this.right) {\n      mode = 'right';\n    }\n    if (this.center) {\n      mode += ' center';\n    }\n    return [mode]\n  }\n\n  public get Right(): string[] {\n    let mode = '';\n    if (this.top) {\n      mode = 'top';\n    } else if (this.bottom) {\n      mode = 'bottom';\n    } else if (this.left) {\n      mode = 'left';\n    } else if (this.right) {\n      mode = 'right';\n    }\n    if (this.down) {\n      mode += ' down';\n    }\n    return [mode]\n  }\n}\n",
+            "sourceCode": "import { Component, Input } from '@angular/core';\n\n@Component({\n  selector: 'app-tooltip',\n  templateUrl: './tooltip.component.html',\n  styleUrls: ['./tooltip.component.scss']\n})\nexport class TooltipComponent {\n  @Input()\n  main_text = 'Tooltip Hover';\n\n  @Input()\n  hover_text = 'Tooltip Text';\n\n  @Input()\n  top = false;\n\n  @Input()\n  bottom = false;\n\n  @Input()\n  left = false;\n\n  @Input()\n  right = false;\n\n\n  @Input()\n  up = false;\n\n  @Input()\n  center = false;\n\n  @Input()\n  down = false;\n\n  public get Tooltip(): string[] {\n    let mode = '';\n    if (this.top) {\n      mode = 'top';\n    } else if (this.bottom) {\n      mode = 'bottom';\n    } else if (this.left) {\n      mode = 'left';\n    } else if (this.right) {\n      mode = 'right';\n    }\n    if (this.center) {\n      mode += ' center';\n    }else if (this.down) {\n      mode += ' down';\n    }else if (this.up) {\n      mode += ' up';\n    }\n    return [mode]\n  }\n}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": ".tooltip {\n  position: relative;\n  display: inline-block;\n  margin: 2em auto;\n  text-align: center;\n  .tooltiptext {\n    visibility: hidden;\n    background: #000000;\n    border-radius: 4px;\n    color: #fff;\n    text-align: center;\n    padding: 5px 8px;\n    position: absolute;\n    z-index: 1;\n    font-size: 14px;\n    &.top {\n      bottom: 150%;\n      left: 50%;\n      &.up {\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 100%;\n          left: 25%;\n          margin-left: -5px;\n          border-width: 5px;\n          border-style: solid;\n          border-color: #000000 transparent transparent transparent;\n        }\n      }\n      &.center {\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 100%;\n          left: 50%;\n          margin-left: -5px;\n          border-width: 5px;\n          border-style: solid;\n          border-color: #000000 transparent transparent transparent;\n        }\n      }\n      &.down {\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 100%;\n          left: 75%;\n          margin-left: -5px;\n          border-width: 5px;\n          border-style: solid;\n          border-color: #000000 transparent transparent transparent;\n        }\n      }\n    }\n    &.bottom {\n      top: 150%;\n      left: 50%;\n      &.up {\n        &::after {\n          content: \"\";\n          position: absolute;\n          bottom: 100%;\n          left: 25%;\n          margin-left: -5px;\n          border-width: 5px;\n          border-style: solid;\n          border-color:  transparent transparent #000000 transparent;\n        }\n      }\n      &.center {\n        &::after {\n          content: \"\";\n          position: absolute;\n          bottom: 100%;\n          left: 50%;\n          margin-left: -5px;\n          border-width: 5px;\n          border-style: solid;\n          border-color: transparent transparent #000000 transparent;\n        }\n      }\n      &.down {\n        &::after {\n          content: \"\";\n          position: absolute;\n          bottom: 100%;\n          left: 75%;\n          margin-left: -5px;\n          border-width: 5px;\n          border-style: solid;\n          border-color: transparent transparent #000000 transparent;\n        }\n      }\n    }\n    &.left {\n      top: -5px;\n      right: 110%;\n      &.up {\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 25%;\n          left: 100%;\n          margin-top: -5px;\n          border-width: 5px;\n          border-style: solid;\n          border-color:  transparent transparent transparent #000000;\n        }\n      }\n      &.center {\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 50%;\n          left: 100%;\n          margin-top: -5px;\n          border-width: 5px;\n          border-style: solid;\n          border-color: transparent transparent transparent #000000;\n        }\n      }\n      &.down {\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 50%;\n          left: 100%;\n          margin-top: -5px;\n          border-width: 5px;\n          border-style: solid;\n          border-color: transparent transparent transparent black;\n        }\n      }\n    }\n    &.right {\n      top: -5px;\n      left: 110%;\n      &.up {\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 25%;\n          right: 100%;\n          margin-left: -5px;\n          border-width: 5px;\n          border-style: solid;\n          border-color:  transparent #000000 transparent transparent;\n        }\n      }\n      &.center {\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 50%;\n          right: 100%;\n          margin-left: -5px;\n          border-width: 5px;\n          border-style: solid;\n          border-color: transparent #000000 transparent transparent;\n        }\n      }\n      &.down {\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 75%;\n          right: 100%;\n          margin-left: -5px;\n          border-width: 5px;\n          border-style: solid;\n          border-color: transparent #000000 transparent transparent;\n        }\n      }\n    }\n  }\n  &:hover {\n    .tooltiptext {\n      visibility: visible;\n    }\n  }\n}\n",
+                    "data": " .tooltip {\n  position: relative;\n  text-align: center;\n  display: inline-block;\n  padding: 10px ;\n  .tooltiptext {\n    width: 100%;\n    visibility: hidden;\n    position: absolute;\n    background: #000000;\n    border-radius: 4px;\n    padding: 5px 8px;\n    z-index: 1;\n    font-size: 14px;\n    color: #fff;\n    transform: translate(0, 10px);\n    &.top {\n      bottom: 100%;\n      left: 0%;\n      &.up {\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 100%;\n          left: 50%;\n          margin-left: -5px;\n          border: 5px solid;\n          border-color: #000 transparent transparent transparent;\n        }\n      }\n      &.center {\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 100%;\n          left: 50%;\n          margin-left: -5px;\n          border: 5px solid;\n          border-color: #000 transparent transparent transparent;\n        }\n      }\n      &.down {\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 100%;\n          left: 75%;\n          margin-left: -5px;\n          border: 5px solid;\n          border-color: #000 transparent transparent transparent;\n        }\n      }\n    }\n    &.bottom {\n      top: 110%;\n      left: 0%;\n      &.up {\n        &::after {\n          content: \"\";\n          position: absolute;\n          bottom: 100%;\n          left: 15%;\n          margin-left: -5px;\n          border: 5px solid;\n          border-color:  transparent transparent #000 transparent;\n        }\n      }\n      &.center {\n        &::after {\n          content: \"\";\n          position: absolute;\n          bottom: 100%;\n          left: 50%;\n          margin-left: -5px;\n          border: 5px solid;\n          border-color: transparent transparent #000 transparent;\n        }\n      }\n      &.down {\n        &::after {\n          content: \"\";\n          position: absolute;\n          bottom: 100%;\n          left: 80%;\n          margin-left: -5px;\n          border: 5px solid;\n          border-color: transparent transparent #000 transparent;\n        }\n      }\n    }\n    &.left {\n      right: 100%;\n      &.up {\n        top: 0%;\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 18%;\n          left: 100%;\n          margin-top: -5px;\n          border: 5px solid;\n          border-color:  transparent transparent transparent #000;\n        }\n      }\n      &.center {\n        top: 10%;\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 50%;\n          left: 100%;\n          margin-top: -5px;\n          border: 5px solid;\n          border-color: transparent transparent transparent #000;\n        }\n      }\n      &.down {\n        top: 10%;\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 70%;\n          left: 100%;\n          margin-top: -5px;\n          border: 5px solid;\n          border-color: transparent transparent transparent #000;\n        }\n      }\n    }\n    &.right {\n      left: 100%;\n      &.up {\n        top: 0%;\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 15%;\n          right: 100%;\n          margin-left: -5px;\n          border: 5px solid;\n          border-color:  transparent #000 transparent transparent;\n        }\n      }\n      &.center {\n        top: -25%;\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 35%;\n          right: 100%;\n          margin-left: -5px;\n          border: 5px solid;\n          border-color: transparent #000 transparent transparent;\n        }\n      }\n      &.down {\n        top: -30%;\n        &::after {\n          content: \"\";\n          position: absolute;\n          top: 50%;\n          right: 100%;\n          margin-left: -5px;\n          border: 5px solid;\n          border-color: transparent #000 transparent transparent;\n        }\n      }\n    }\n  }\n  &:hover {\n    .tooltiptext {\n      visibility: visible;\n      z-index: 10;\n      transform: translate(0, 0px);\n      transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);\n    }\n  }\n}\n",
                     "styleUrl": "./tooltip.component.scss"
                 }
             ],
             "stylesData": "",
             "accessors": {
-                "Left": {
-                    "name": "Left",
+                "Tooltip": {
+                    "name": "Tooltip",
                     "getSignature": {
-                        "name": "Left",
+                        "name": "Tooltip",
                         "type": "[]",
                         "returnType": "string[]",
-                        "line": 31
-                    }
-                },
-                "Center": {
-                    "name": "Center",
-                    "getSignature": {
-                        "name": "Center",
-                        "type": "[]",
-                        "returnType": "string[]",
-                        "line": 48
-                    }
-                },
-                "Right": {
-                    "name": "Right",
-                    "getSignature": {
-                        "name": "Right",
-                        "type": "[]",
-                        "returnType": "string[]",
-                        "line": 65
+                        "line": 37
                     }
                 }
             },
-            "templateData": "<div class=\"tooltip\">Hover\n  <span *ngIf='up' [ngClass]='Left' class=\"tooltiptext\">Tooltip Text</span>\n  <span *ngIf='center' [ngClass]='Center' class=\"tooltiptext\">Tooltip Text</span>\n  <span *ngIf='down' [ngClass]='Right' class=\"tooltiptext\">Tooltip Text</span>\n</div>\n\n"
+            "templateData": "<div class=\"tooltip\"> {{main_text}}\n  <span [ngClass]='Tooltip' class=\"tooltiptext\">\n    {{hover_text}}\n  </span>\n</div>\n\n"
         }
     ],
     "modules": [
@@ -3717,6 +4030,15 @@
                             "name": "SwitchButtonComponent"
                         },
                         {
+                            "name": "TabComponent"
+                        },
+                        {
+                            "name": "TableComponent"
+                        },
+                        {
+                            "name": "TableeComponent"
+                        },
+                        {
                             "name": "TextButtonComponent"
                         },
                         {
@@ -3788,6 +4110,14 @@
     ],
     "miscellaneous": {
         "variables": [
+            {
+                "name": "Active",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Tab.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
             {
                 "name": "ActiveNormal",
                 "ctype": "miscellaneous",
@@ -3869,6 +4199,22 @@
                 "defaultValue": "Template.bind({})"
             },
             {
+                "name": "Border",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Table.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "BottomCenterTip",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Popover.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
                 "name": "BottomCenterTip",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -3880,7 +4226,23 @@
                 "name": "BottomDownTip",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/Popover.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "BottomDownTip",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/Tooltip.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "BottomUpTip",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Popover.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -3913,6 +4275,22 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/Global-Banner-Alert.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Closable",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Tab.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "ClosableWithIcon",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Tab.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -4120,7 +4498,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Popover.stories.ts",
+                "file": "src/stories/Rate.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -4128,7 +4506,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Rate.stories.ts",
+                "file": "src/stories/Table.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -4552,7 +4930,23 @@
                 "name": "LeftCenterTip",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/Popover.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LeftCenterTip",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/Tooltip.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LeftDownTip",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Popover.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -4577,6 +4971,14 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/Input.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "LeftUpTip",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Popover.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -4745,6 +5147,22 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/Menu-Bar-Item.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "OrderBase",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Table.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "OrderBaseWithBorder",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Table.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -5023,7 +5441,23 @@
                 "name": "RightCenterTip",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/Popover.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "RightCenterTip",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/Tooltip.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "RightDownTip",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Popover.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -5048,6 +5482,14 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/Input.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "RightUpTip",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Popover.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -5088,6 +5530,14 @@
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/Chips.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Selected",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Table.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -5487,6 +5937,22 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/Tab.stories.ts",
+                "type": "Story<TabComponent>",
+                "defaultValue": "(args: TabComponent) => ({\n  component: TabComponent,\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Table.stories.ts",
+                "type": "Story<TableComponent>",
+                "defaultValue": "(args: TableComponent) => ({\n  component: TableComponent,\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/Text-Button.stories.ts",
                 "type": "Story<TextButtonComponent>",
                 "defaultValue": "(args: TextButtonComponent) => ({\n  component: TextButtonComponent,\n  props: args,\n})"
@@ -5551,7 +6017,23 @@
                 "name": "TopCenterTip",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/Popover.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "TopCenterTip",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/Tooltip.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "TopDownTip",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Popover.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -5567,7 +6049,31 @@
                 "name": "TopUpTip",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
+                "file": "src/stories/Popover.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "TopUpTip",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
                 "file": "src/stories/Tooltip.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "Unclosable",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Tab.stories.ts",
+                "type": "",
+                "defaultValue": "Template.bind({})"
+            },
+            {
+                "name": "UnclosableWithIcon",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Tab.stories.ts",
                 "type": "",
                 "defaultValue": "Template.bind({})"
             },
@@ -5744,6 +6250,56 @@
         "typealiases": [],
         "enumerations": [],
         "groupedVariables": {
+            "src/stories/Tab.stories.ts": [
+                {
+                    "name": "Active",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Tab.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Closable",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Tab.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "ClosableWithIcon",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Tab.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Tab.stories.ts",
+                    "type": "Story<TabComponent>",
+                    "defaultValue": "(args: TabComponent) => ({\n  component: TabComponent,\n  props: args,\n})"
+                },
+                {
+                    "name": "Unclosable",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Tab.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "UnclosableWithIcon",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Tab.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ],
             "src/stories/Menu-Bar-Item.stories.ts": [
                 {
                     "name": "ActiveNormal",
@@ -6360,6 +6916,162 @@
                     "defaultValue": "Template.bind({})"
                 }
             ],
+            "src/stories/Table.stories.ts": [
+                {
+                    "name": "Border",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Table.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Table.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "OrderBase",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Table.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "OrderBaseWithBorder",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Table.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Selected",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Table.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Table.stories.ts",
+                    "type": "Story<TableComponent>",
+                    "defaultValue": "(args: TableComponent) => ({\n  component: TableComponent,\n  props: args,\n})"
+                }
+            ],
+            "src/stories/Popover.stories.ts": [
+                {
+                    "name": "BottomCenterTip",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Popover.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "BottomDownTip",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Popover.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "BottomUpTip",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Popover.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LeftCenterTip",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Popover.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LeftDownTip",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Popover.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "LeftUpTip",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Popover.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "RightCenterTip",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Popover.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "RightDownTip",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Popover.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "RightUpTip",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Popover.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Popover.stories.ts",
+                    "type": "Story<PopoverComponent>",
+                    "defaultValue": "(args: PopoverComponent) => ({\n  component: PopoverComponent,\n  props: args,\n})"
+                },
+                {
+                    "name": "TopCenterTip",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Popover.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "TopDownTip",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Popover.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "TopUpTip",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Popover.stories.ts",
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                }
+            ],
             "src/stories/Tooltip.stories.ts": [
                 {
                     "name": "BottomCenterTip",
@@ -6931,24 +7643,6 @@
                     "file": "src/stories/Global-Banners.stories.ts",
                     "type": "",
                     "defaultValue": "Template.bind({})"
-                }
-            ],
-            "src/stories/Popover.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Popover.stories.ts",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "Template",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Popover.stories.ts",
-                    "type": "Story<PopoverComponent>",
-                    "defaultValue": "(args: PopoverComponent) => ({\n  component: PopoverComponent,\n  props: args,\n})"
                 }
             ],
             "src/stories/Rate.stories.ts": [
@@ -8064,7 +8758,7 @@
                 "linktype": "component",
                 "name": "PopoverComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/4",
+                "coverageCount": "0/11",
                 "status": "low"
             },
             {
@@ -8131,6 +8825,33 @@
                 "status": "low"
             },
             {
+                "filePath": "src/app/tab/tab.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TabComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/6",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/table/table.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TableComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/9",
+                "status": "low"
+            },
+            {
+                "filePath": "src/app/tablee/tablee.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TableeComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/9",
+                "status": "low"
+            },
+            {
                 "filePath": "src/app/text-button/text-button.component.ts",
                 "type": "component",
                 "linktype": "component",
@@ -8163,7 +8884,7 @@
                 "linktype": "component",
                 "name": "TooltipComponent",
                 "coveragePercent": 0,
-                "coverageCount": "0/8",
+                "coverageCount": "0/10",
                 "status": "low"
             },
             {
@@ -9931,7 +10652,87 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "Default",
+                "name": "BottomCenterTip",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Popover.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BottomDownTip",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Popover.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "BottomUpTip",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Popover.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LeftCenterTip",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Popover.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LeftDownTip",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Popover.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "LeftUpTip",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Popover.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "RightCenterTip",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Popover.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "RightDownTip",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Popover.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "RightUpTip",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -9942,6 +10743,36 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Popover.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "TopCenterTip",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Popover.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "TopDownTip",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Popover.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "TopUpTip",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
@@ -10218,6 +11049,126 @@
             },
             {
                 "filePath": "src/stories/Switch-Button.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Tab.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Active",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Tab.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Closable",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Tab.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "ClosableWithIcon",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Tab.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Template",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Tab.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Unclosable",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Tab.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "UnclosableWithIcon",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Table.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Border",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Table.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Table.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "OrderBase",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Table.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "OrderBaseWithBorder",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Table.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Selected",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "src/stories/Table.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",

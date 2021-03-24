@@ -20,12 +20,24 @@ WithoutLabel.args = {
   leftIcon: false,
   rightIcon: false
 };
+WithoutLabel.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
+};
 
 export const WithLabel = Template.bind({});
 WithLabel.args = {
   label: true,
   leftIcon: false,
   rightIcon: false
+};
+WithLabel.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
 };
 
 export const DoubleIcon = Template.bind({});
@@ -34,12 +46,24 @@ DoubleIcon.args = {
   leftIcon: true,
   rightIcon: true
 };
+DoubleIcon.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
+};
 
 export const RightIcon = Template.bind({});
 RightIcon.args = {
   label: true,
   leftIcon: false,
   rightIcon: true
+};
+RightIcon.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
 };
 
 export const LeftIcon = Template.bind({});
@@ -48,4 +72,9 @@ LeftIcon.args = {
   leftIcon:  true,
   rightIcon: false
 };
-
+LeftIcon.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
+};

@@ -1,12 +1,194 @@
 .popover_wrapper {
   position: relative;
+  text-align: center;
+  display: inline-block;
   h2 {
     color: #595959;
     text-transform: capitalize;
   }
   .popover {
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+    display: inline-block;
     background: #ffffff;
     border-radius: 4px;
-
+    padding: 10px 0px;
+    transform: translate(0, 10px);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    &.top {
+      bottom: 100%;
+      left: 0%;
+      &.up {
+        &::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          margin-left: -5px;
+          border: 5px solid;
+          border-color: #FFFFFF transparent transparent transparent;
+        }
+      }
+      &.center {
+        &::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          margin-left: -5px;
+          border: 5px solid;
+          border-color: #FFFFFF transparent transparent transparent;
+        }
+      }
+      &.down {
+        &::after {
+          content: "";
+          position: absolute;
+          top: 100%;
+          left: 75%;
+          margin-left: -5px;
+          border: 5px solid;
+          border-color: #FFFFFF transparent transparent transparent;
+        }
+      }
+    }
+    &.bottom {
+      top: 110%;
+      left: 0%;
+      &.up {
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 100%;
+          left: 15%;
+          margin-left: -5px;
+          border: 5px solid;
+          border-color:  transparent transparent #FFFFFF transparent;
+        }
+      }
+      &.center {
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 100%;
+          left: 50%;
+          margin-left: -5px;
+          border: 5px solid;
+          border-color: transparent transparent #FFFFFF transparent;
+        }
+      }
+      &.down {
+        &::after {
+          content: "";
+          position: absolute;
+          bottom: 100%;
+          left: 80%;
+          margin-left: -5px;
+          border: 5px solid;
+          border-color: transparent transparent #FFFFFF transparent;
+        }
+      }
+    }
+    &.left {
+      right: 100%;
+      &.up {
+        top: 0%;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 18%;
+          left: 100%;
+          margin-top: -5px;
+          border: 5px solid;
+          border-color:  transparent transparent transparent #FFFFFF;
+        }
+      }
+      &.center {
+        top: -25%;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 100%;
+          margin-top: -5px;
+          border: 5px solid;
+          border-color: transparent transparent transparent #FFFFFF;
+        }
+      }
+      &.down {
+        top: -30%;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 70%;
+          left: 100%;
+          margin-top: -5px;
+          border: 5px solid;
+          border-color: transparent transparent transparent #FFFFFF;
+        }
+      }
+    }
+    &.right {
+      left: 100%;
+      &.up {
+        top: 0%;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 15%;
+          right: 100%;
+          margin-left: -5px;
+          border: 5px solid;
+          border-color:  transparent #FFFFFF transparent transparent;
+        }
+      }
+      &.center {
+        top: -25%;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 100%;
+          margin-left: -5px;
+          border: 5px solid;
+          border-color: transparent #FFFFFF transparent transparent;
+        }
+      }
+      &.down {
+        top: -30%;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 70%;
+          right: 100%;
+          margin-left: -5px;
+          border: 5px solid;
+          border-color: transparent #FFFFFF transparent transparent;
+        }
+      }
+    }
+    h3{
+      margin: 0;
+      padding: 15px 15px 20px;
+      font-size: 16px;
+      color: #595959;
+      text-transform: capitalize;
+      border-bottom: 1px solid #D9D9D9;;
+    }
+    p{
+      color: #8C8C8C;
+      font-size: 14px;
+      padding: 10px 15px;
+    }
+  }
+  &:hover{
+    .popover{
+      z-index: 10;
+      visibility: visible;
+      transform: translate(0, 0px);
+      transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+    }
   }
 }

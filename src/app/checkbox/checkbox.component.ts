@@ -11,14 +11,4 @@ export class CheckboxComponent{
 
   @Input()
   labelText = 'Label';
-
-  public get Label(): string[]{
-    let mode = '';
-    if(this.label){
-      mode = 'visibility';
-    }else{
-      mode = 'hidden';
-    }
-    return [ mode ];
-  }
 }

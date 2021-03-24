@@ -15,6 +15,12 @@ export const BasicInformation = Template.bind({});
 BasicInformation.args = {
   information: true
 };
+BasicInformation.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
+};
 
 export const InfoInformation = Template.bind({});
 InfoInformation.args = {
@@ -22,6 +28,12 @@ InfoInformation.args = {
   info: true,
   title: 'Information Title',
   icon:true,
+};
+InfoInformation.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };
 
 export const ErrorInformation = Template.bind({});
@@ -31,6 +43,12 @@ ErrorInformation.args = {
   title: 'Error or Delete Title',
   icon:true,
 };
+ErrorInformation.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
+};
 
 export const WarningInformation = Template.bind({});
 WarningInformation.args = {
@@ -38,6 +56,12 @@ WarningInformation.args = {
   warning: true,
   title: 'Warning Title',
   icon:true,
+};
+WarningInformation.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };
 
 export const SuccessInformation = Template.bind({});
@@ -47,11 +71,24 @@ SuccessInformation.args = {
   title: 'Success Title',
   icon:true,
 };
+SuccessInformation.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
+};
+
 export const InfoInformationWithoutIcon = Template.bind({});
 InfoInformationWithoutIcon.args = {
   information: true,
   info: true,
   title: 'Information Title',
+};
+InfoInformationWithoutIcon.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };
 
 export const ErrorInformationWithoutIcon = Template.bind({});
@@ -60,12 +97,24 @@ ErrorInformationWithoutIcon.args = {
   error: true,
   title: 'Error or Delete Title',
 };
+ErrorInformationWithoutIcon.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
+};
 
 export const WarningInformationWithoutIcon = Template.bind({});
 WarningInformationWithoutIcon.args = {
   information: true,
   warning: true,
   title: 'Warning Title',
+};
+WarningInformationWithoutIcon.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };
 
 export const SuccessInformationWithoutIcon = Template.bind({});
@@ -74,11 +123,23 @@ SuccessInformationWithoutIcon.args = {
   success: true,
   title: 'Success Title',
 };
+SuccessInformationWithoutIcon.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
+};
 
 //Confermation
 export const BasicConfermation = Template.bind({});
 BasicConfermation.args = {
   information: false
+};
+BasicConfermation.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };
 
 export const InfoConfermation = Template.bind({});
@@ -88,6 +149,12 @@ InfoConfermation.args = {
   title: 'Information Title',
   icon:true,
 };
+InfoConfermation.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
+};
 
 export const ErrorConfermation = Template.bind({});
 ErrorConfermation.args = {
@@ -95,6 +162,12 @@ ErrorConfermation.args = {
   error: true,
   title: 'Error or Delete Title',
   icon:true,
+};
+ErrorConfermation.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };
 
 export const WarningConfermation = Template.bind({});
@@ -104,6 +177,12 @@ WarningConfermation.args = {
   title: 'Warning Title',
   icon:true,
 };
+WarningConfermation.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
+};
 
 export const SuccessConfermation = Template.bind({});
 SuccessConfermation.args = {
@@ -112,11 +191,24 @@ SuccessConfermation.args = {
   title: 'Success Title',
   icon:true,
 };
+SuccessConfermation.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
+};
+
 export const InfoConfermationWithoutIcon = Template.bind({});
 InfoConfermationWithoutIcon.args = {
   information: false,
   info: true,
   title: 'Information Title',
+};
+InfoConfermationWithoutIcon.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };
 
 export const ErrorConfermationWithoutIcon = Template.bind({});
@@ -125,6 +217,12 @@ ErrorConfermationWithoutIcon.args = {
   error: true,
   title: 'Error or Delete Title',
 };
+ErrorConfermationWithoutIcon.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
+};
 
 export const WarningConfermationWithoutIcon = Template.bind({});
 WarningConfermationWithoutIcon.args = {
@@ -132,10 +230,22 @@ WarningConfermationWithoutIcon.args = {
   warning: true,
   title: 'Warning Title',
 };
+WarningConfermationWithoutIcon.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
+};
 
 export const SuccessConfermationWithoutIcon = Template.bind({});
 SuccessConfermationWithoutIcon.args = {
   information: false,
   success: true,
   title: 'Success Title',
+};
+SuccessConfermationWithoutIcon.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };

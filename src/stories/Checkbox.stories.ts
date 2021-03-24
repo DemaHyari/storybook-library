@@ -19,8 +19,20 @@ Label.args = {
   label: true,
   labelText: 'Checkbox'
 };
+Label.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
+};
 
 export const NoLabel = Template.bind({});
 NoLabel.args = {
   label: false,
+};
+NoLabel.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+  }
 };

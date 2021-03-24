@@ -1,0 +1,65 @@
+table{
+  th, td{
+    border-spacing: 0;
+    font-size: 14px;
+    &.small{
+      padding: 8px 24px;
+    }
+    &.medium{
+      padding: 12px 24px;
+    }
+    &.large{
+      padding: 16px 24px;
+    }
+  }
+  th{
+    color: #8C8C8C;
+    background: #FAFAFA;
+    svg{
+      color: #85A5FF;
+      margin-left: 6px;
+    }
+    &.border{
+      box-shadow: inset 1px 0px 0px #D9D9D9, inset 0px 1px 0px #D9D9D9, inset -1px 0px 0px #D9D9D9, inset 0px -1px 0px #D9D9D9;
+      /*
+      &.order-base{
+        box-shadow: inset 1px 0px 0px #D9D9D9, inset 0px 1px 0px #D9D9D9, inset -1px 0px 0px #D9D9D9, inset 0px -1px 0px #40A9FF;
+      }*/
+    }
+    /*
+    &.order-base{
+      box-shadow: inset 1px 0px 0px #D9D9D9, inset 0px 1px 0px #D9D9D9, inset -1px 0px 0px #D9D9D9, inset 0px -1px 0px #40A9FF;
+    }*/
+    &.selected{
+      background: #69C0FF;
+      color: #FFFFFF;
+      &.border{
+        box-shadow: inset 1px 0px 0px #40A9FF, inset 0px 1px 0px #40A9FF, inset -1px 0px 0px #40A9FF, inset 0px -1px 0px #40A9FF;
+      }
+      svg{
+        color: #FFFFFF;
+      }
+    }
+  }
+  td{
+    color: #595959;
+    background: #FFFFFF;
+    box-shadow: inset 0px 1px 0px #D9D9D9, inset 0px -1px 0px #D9D9D9;
+    &.border{
+      box-shadow: inset 1px 0px 0px #D9D9D9, inset 0px 1px 0px #D9D9D9, inset -1px 0px 0px #D9D9D9, inset 0px -1px 0px #D9D9D9;
+    }
+    &.selected{
+      background: #BAE7FF;
+      color:  #595959;;
+      box-shadow: inset 0px 1px 0px #40A9FF, inset 0px -1px 0px #40A9FF;
+      svg{
+        color: #FFFFFF;
+      }
+    }
+    &:hover{
+      background: #E6F7FF;
+      box-shadow: inset 0px 1px 0px #91D5FF, inset 0px -1px 0px #91D5FF;
+    }
+  }
+}
+

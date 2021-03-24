@@ -7,6 +7,12 @@ import { Component, Input } from '@angular/core';
 })
 export class TooltipComponent {
   @Input()
+  main_text = 'Tooltip Hover';
+
+  @Input()
+  hover_text = 'Tooltip Text';
+
+  @Input()
   top = false;
 
   @Input()
@@ -27,25 +33,8 @@ export class TooltipComponent {
 
   @Input()
   down = false;
-  
-  public get Left(): string[] {
-    let mode = '';
-    if (this.top) {
-      mode = 'top ';
-    } else if (this.bottom) {
-      mode = 'bottom ';
-    } else if (this.left) {
-      mode = 'left ';
-    } else if (this.right) {
-      mode = 'right ';
-    }
-    if (this.up) {
-      mode += ' up';
-    }
-    return [mode]
-  }
 
-  public get Center(): string[] {
+  public get Tooltip(): string[] {
     let mode = '';
     if (this.top) {
       mode = 'top';
@@ -58,23 +47,10 @@ export class TooltipComponent {
     }
     if (this.center) {
       mode += ' center';
-    }
-    return [mode]
-  }
-
-  public get Right(): string[] {
-    let mode = '';
-    if (this.top) {
-      mode = 'top';
-    } else if (this.bottom) {
-      mode = 'bottom';
-    } else if (this.left) {
-      mode = 'left';
-    } else if (this.right) {
-      mode = 'right';
-    }
-    if (this.down) {
+    }else if (this.down) {
       mode += ' down';
+    }else if (this.up) {
+      mode += ' up';
     }
     return [mode]
   }

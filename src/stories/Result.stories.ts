@@ -14,23 +14,43 @@ const Template: Story<ResultComponent> = (args: ResultComponent) => ({
 export const Success = Template.bind({});
 Success.args = {
   success: true,
-
+};
+Success.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };
 
 export const Info = Template.bind({});
 Info.args = {
   info: true,
-
+};
+Info.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };
 
 export const Warning = Template.bind({});
 Warning.args = {
   warning: true,
-
+};
+Warning.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };
 
 export const Erorr = Template.bind({});
 Erorr.args = {
   error: true,
-
+};
+Erorr.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };

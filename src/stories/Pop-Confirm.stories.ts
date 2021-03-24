@@ -16,5 +16,11 @@ const Template: Story<PopConfirmComponent> = (args: PopConfirmComponent) => ({
 
 export const Label = Template.bind({});
 Label.args = {
- 
+
+};
+Label.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+  }
 };

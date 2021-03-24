@@ -19,6 +19,12 @@ PrimaryDropdown.args = {
   primary: true,
   label: 'Label',
 };
+PrimaryDropdown.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+  }
+};
 
 export const DangerDropdown = Template.bind({});
 DangerDropdown.args = {
@@ -26,11 +32,23 @@ DangerDropdown.args = {
   danger: true,
   label: 'Label',
 };
+DangerDropdown.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+  }
+};
 
 export const PrimaryOutlineDropdown = Template.bind({});
 PrimaryOutlineDropdown.args = {
   primaryOutline: true,
   label: 'Label',
+};
+PrimaryOutlineDropdown.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+  }
 };
 
 export const DangerOutlineDropdown = Template.bind({});
@@ -38,15 +56,33 @@ DangerOutlineDropdown.args = {
   dangerOutline: true,
   label: 'Label',
 };
+DangerOutlineDropdown.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+  }
+};
 
 export const OutlineDropdown = Template.bind({});
 OutlineDropdown.args = {
   outline: true,
   label: 'Label',
 };
+OutlineDropdown.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+  }
+};
 
 export const DashedDropdown = Template.bind({});
 DashedDropdown.args = {
   dashed: true,
   label: 'Label',
+};
+DashedDropdown.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+  }
 };

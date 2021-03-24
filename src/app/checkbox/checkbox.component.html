@@ -1,5 +1,5 @@
 <label class="container">
-  <span [ngClass]="Label">{{ labelText }}</span>
+  <span *ngIf="Label">{{ labelText }}</span>
   <input type="checkbox">
   <span class="checkmark"></span>
 </label>

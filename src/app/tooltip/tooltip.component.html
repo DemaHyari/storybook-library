@@ -1,6 +1,6 @@
-<div class="tooltip">Hover
-  <span *ngIf='up' [ngClass]='Left' class="tooltiptext">Tooltip Text</span>
-  <span *ngIf='center' [ngClass]='Center' class="tooltiptext">Tooltip Text</span>
-  <span *ngIf='down' [ngClass]='Right' class="tooltiptext">Tooltip Text</span>
+<div class="tooltip"> {{main_text}}
+  <span [ngClass]='Tooltip' class="tooltiptext">
+    {{hover_text}}
+  </span>
 </div>
 

@@ -19,12 +19,24 @@ Normal.args = {
   label: 'Primary Menu Item',
   primaryItem: true
 };
+Normal.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+  }
+};
 
 export const  ActiveNormal = Template.bind({});
 ActiveNormal.args = {
   label: 'Primary Menu Item',
   primaryItem: true,
   active: true
+};
+ActiveNormal.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+  }
 };
 
 export const  Collapsed = Template.bind({});
@@ -33,6 +45,12 @@ Collapsed.args = {
   primaryItem: true,
   collapsed: true
 };
+Collapsed.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+  }
+};
 
 export const  Uncollapsed = Template.bind({});
 Uncollapsed.args = {
@@ -40,9 +58,21 @@ Uncollapsed.args = {
   primaryItem: true,
   uncollapsed: true
 };
+Uncollapsed.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+  }
+};
 
 export const  SubItem = Template.bind({});
 SubItem.args = {
   label: 'Sub Item',
   subItem: true
+};
+SubItem.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+  }
 };
