@@ -21,7 +21,7 @@ SearchIcon.args = {
 SearchIcon.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1652%3A521"
   }
 };
 
@@ -32,7 +32,7 @@ SearchInput.args = {
 SearchInput.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1652%3A521"
   }
 };
 
@@ -44,6 +44,6 @@ Logo.args = {
 Logo.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1626%3A44917"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1652%3A521"
   }
 };

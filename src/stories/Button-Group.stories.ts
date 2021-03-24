@@ -25,7 +25,7 @@ PrimaryText.args = {
 PrimaryText.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=961%3A43617" // <-- paste here!
   }
 };
 
@@ -40,7 +40,7 @@ PrimaryIcon.args = {
 PrimaryIcon.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=961%3A43617" // <-- paste here!
   }
 };
 
@@ -55,7 +55,7 @@ OutlineText.args = {
 OutlineText.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=961%3A43617" // <-- paste here!
   }
 };
 
@@ -70,6 +70,6 @@ OutlineIcon.args = {
 OutlineIcon.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=961%3A43617" // <-- paste here!
   }
 };

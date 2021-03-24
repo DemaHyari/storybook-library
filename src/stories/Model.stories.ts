@@ -18,7 +18,7 @@ BasicInformation.args = {
 BasicInformation.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=716%3A987"
   }
 };
 
@@ -32,7 +32,7 @@ InfoInformation.args = {
 InfoInformation.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=716%3A987"
   }
 };
 
@@ -46,7 +46,7 @@ ErrorInformation.args = {
 ErrorInformation.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=716%3A987"
   }
 };
 
@@ -60,7 +60,7 @@ WarningInformation.args = {
 WarningInformation.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=716%3A987"
   }
 };
 
@@ -74,7 +74,7 @@ SuccessInformation.args = {
 SuccessInformation.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=716%3A987"
   }
 };
 
@@ -87,7 +87,7 @@ InfoInformationWithoutIcon.args = {
 InfoInformationWithoutIcon.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=716%3A987"
   }
 };
 
@@ -100,7 +100,7 @@ ErrorInformationWithoutIcon.args = {
 ErrorInformationWithoutIcon.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=716%3A987"
   }
 };
 
@@ -113,7 +113,7 @@ WarningInformationWithoutIcon.args = {
 WarningInformationWithoutIcon.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=716%3A987"
   }
 };
 
@@ -126,7 +126,7 @@ SuccessInformationWithoutIcon.args = {
 SuccessInformationWithoutIcon.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=716%3A987"
   }
 };
 
@@ -138,7 +138,7 @@ BasicConfermation.args = {
 BasicConfermation.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=716%3A987"
   }
 };
 
@@ -152,7 +152,7 @@ InfoConfermation.args = {
 InfoConfermation.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=716%3A987"
   }
 };
 
@@ -166,7 +166,7 @@ ErrorConfermation.args = {
 ErrorConfermation.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=716%3A987"
   }
 };
 
@@ -180,7 +180,7 @@ WarningConfermation.args = {
 WarningConfermation.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=716%3A987"
   }
 };
 
@@ -194,7 +194,7 @@ SuccessConfermation.args = {
 SuccessConfermation.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=716%3A987"
   }
 };
 
@@ -207,7 +207,7 @@ InfoConfermationWithoutIcon.args = {
 InfoConfermationWithoutIcon.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=716%3A987"
   }
 };
 
@@ -220,7 +220,7 @@ ErrorConfermationWithoutIcon.args = {
 ErrorConfermationWithoutIcon.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=716%3A987"
   }
 };
 
@@ -233,7 +233,7 @@ WarningConfermationWithoutIcon.args = {
 WarningConfermationWithoutIcon.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=716%3A987"
   }
 };
 
@@ -246,6 +246,6 @@ SuccessConfermationWithoutIcon.args = {
 SuccessConfermationWithoutIcon.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=716%3A987"
   }
 };

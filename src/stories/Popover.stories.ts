@@ -23,7 +23,7 @@ TopUpTip.args = {
 TopUpTip.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A31060"
   }
 };
 
@@ -35,7 +35,7 @@ TopCenterTip.args = {
 TopCenterTip.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A31060"
   }
 };
 
@@ -47,7 +47,7 @@ TopDownTip.args = {
 TopDownTip.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A31060"
   }
 };
 
@@ -60,7 +60,7 @@ BottomUpTip.args = {
 BottomUpTip.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A31060"
   }
 };
 
@@ -72,7 +72,7 @@ BottomCenterTip.args = {
 BottomCenterTip.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A31060"
   }
 };
 
@@ -84,7 +84,7 @@ BottomDownTip.args = {
 BottomDownTip.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A31060"
   }
 };
 
@@ -97,7 +97,7 @@ LeftUpTip.args = {
 LeftUpTip.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A31060"
   }
 };
 
@@ -109,7 +109,7 @@ LeftCenterTip.args = {
 LeftCenterTip.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A31060"
   }
 };
 
@@ -121,7 +121,7 @@ LeftDownTip.args = {
 LeftDownTip.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A31060"
   }
 };
 
@@ -134,7 +134,7 @@ RightUpTip.args = {
 RightUpTip.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A31060"
   }
 };
 
@@ -146,7 +146,7 @@ RightCenterTip.args = {
 RightCenterTip.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A31060"
   }
 };
 
@@ -158,6 +158,6 @@ RightDownTip.args = {
 RightDownTip.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A33009"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=706%3A31060"
   }
 };

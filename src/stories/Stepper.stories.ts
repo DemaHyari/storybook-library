@@ -22,7 +22,7 @@ Arrow.args = {
 Arrow.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1086%3A37290"
   }
 };
 
@@ -34,7 +34,7 @@ Icon.args = {
 Icon.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1086%3A37290"
   }
 };
 
@@ -47,7 +47,7 @@ VerticalIcon.args = {
 VerticalIcon.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1086%3A37290"
   }
 };
 
@@ -61,6 +61,6 @@ VerticalArrow.args = {
 VerticalArrow.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1678%3A0"
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1086%3A37290"
   }
 };

@@ -5769,17 +5769,17 @@
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Group-Paginator.stories.ts",
-                "type": "Story<GroupPaginationComponent>",
-                "defaultValue": "(args: GroupPaginationComponent) => ({\n  component: GroupPaginationComponent,\n  props: args,\n})"
+                "file": "src/stories/Header.stories.ts",
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  component: Header,\n  props: args,\n})"
             },
             {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Header.stories.ts",
-                "type": "Story<Header>",
-                "defaultValue": "(args: Header) => ({\n  component: Header,\n  props: args,\n})"
+                "file": "src/stories/Group-Paginator.stories.ts",
+                "type": "Story<GroupPaginationComponent>",
+                "defaultValue": "(args: GroupPaginationComponent) => ({\n  component: GroupPaginationComponent,\n  props: args,\n})"
             },
             {
                 "name": "Template",

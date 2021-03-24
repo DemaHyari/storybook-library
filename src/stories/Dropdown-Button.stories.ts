@@ -22,7 +22,7 @@ PrimaryDropdown.args = {
 PrimaryDropdown.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1873%3A0" // <-- paste here!
   }
 };
 
@@ -35,7 +35,7 @@ DangerDropdown.args = {
 DangerDropdown.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1873%3A0" // <-- paste here!
   }
 };
 
@@ -47,7 +47,7 @@ PrimaryOutlineDropdown.args = {
 PrimaryOutlineDropdown.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1873%3A0" // <-- paste here!
   }
 };
 
@@ -59,7 +59,7 @@ DangerOutlineDropdown.args = {
 DangerOutlineDropdown.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1873%3A0" // <-- paste here!
   }
 };
 
@@ -71,7 +71,7 @@ OutlineDropdown.args = {
 OutlineDropdown.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1873%3A0" // <-- paste here!
   }
 };
 
@@ -83,6 +83,6 @@ DashedDropdown.args = {
 DashedDropdown.parameters = {
   design: {
     type: "figma",
-    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1592%3A45040" // <-- paste here!
+    url: "https://www.figma.com/file/4fkXprPZROGGyCrknp6GfW/Blue-Waves-Design-System?node-id=1873%3A0" // <-- paste here!
   }
 };
